@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu ul li {
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.menu ul li:hover {
+    border-color: #ccc;
+    background-color: #35b1cf;
+}
+
+.menu ul li:hover a {
+    color: #fff !important;
+}
+
+.menu ul li.active {
+    border-color: #ccc;
+    background-color: #35b1cf;
+}
+
+.menu ul li.active a {
+    color: #fff !important;
+}
+
+.menu ul li.active:hover {
+    border-color: #ccc;
+    background-color: #35b1cf;
+}
+
+.menu ul li.active:hover a {
+    color: #fff !important;
+}
+
+.parallax-container {
+    height: 400px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
