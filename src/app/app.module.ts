@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +17,8 @@ import { ServicesComponent } from './components/services/services.component';
 
 // Modulos
 import { ParallaxScrollModule } from 'ng2-parallaxscroll';
+import {MatButtonModule} from '@angular/material/button';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [
@@ -32,9 +34,12 @@ import { ParallaxScrollModule } from 'ng2-parallaxscroll';
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot( ROUTES, { useHash: true } ),
-    ParallaxScrollModule
+    ParallaxScrollModule,
+    MDBBootstrapModule,
+    MatButtonModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ NO_ERRORS_SCHEMA ]
 })
 export class AppModule { }
